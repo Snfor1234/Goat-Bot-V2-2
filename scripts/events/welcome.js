@@ -19,7 +19,7 @@ module.exports = {
 			welcomeMessage: "Cảm ơn bạn đã mời tôi vào nhóm!\nPrefix bot: %1\nĐể xem danh sách lệnh hãy nhập: %1help",
 			multiple1: "bạn",
 			multiple2: "các bạn",
-			defaultWelcomeMessage: "Xin chào {userName}.\nChào mừng bạn đến với {boxName}.\nChúc bạn có buổi {session} vui vẻ!"
+			defaultWelcomeMessage: "مرحبا بك يا عزيزي"
 		},
 		en: {
 			session1: "morning",
@@ -29,7 +29,7 @@ module.exports = {
 			welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
+			defaultWelcomeMessage: "مرحبا بك يا عزيزي"
 		}
 	},
 
@@ -83,11 +83,6 @@ module.exports = {
 							id: user.userFbId
 						});
 					}
-					// {userName}:   name of new member
-					// {multiple}:
-					// {boxName}:    name of group
-					// {threadName}: name of group
-					// {session}:    session of day
 					if (userName.length == 0) return;
 					let { welcomeMessage = getLang("defaultWelcomeMessage") } =
 						threadData.data;
